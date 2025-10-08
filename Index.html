@@ -3,114 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HABIT - palmeiras nao tem mundial</title>
+  <title>Habit - Tópicos de Interesse</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <nav class="navbar">
       <div class="logo">HABIT</div>
-      <ul class="nav-links">
+      <ul class="menu">
         <li><a href="#">Início</a></li>
         <li><a href="#">Páginas</a></li>
         <li><a href="#">Destaques</a></li>
         <li><a href="#">Assinar</a></li>
         <li><a href="#">Admin</a></li>
       </ul>
-
-      <form class="search-form">
-        <input type="search" placeholder="Buscar..." aria-label="Buscar">
-        <button type="submit">Buscar</button>
-      </form>
-
-      <button class="btn-outline">Entrar</button>
+      <div class="search-area">
+        <input type="text" id="search" placeholder="Buscar...">
+        <button id="btnSearch">Buscar</button>
+        <button id="btnLogin" class="outline">Entrar</button>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="intro">
-      <div class="intro-text">
-        <h1>Navegue por palmeiras nao tem  mundial</h1>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Navegue por tópicos de interesse</h1>
         <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
-        <div class="intro-buttons">
-          <button class="btn-primary">Explorar categorias</button>
-          <button class="btn-outline">Assine a newsletter</button>
+        <div class="hero-buttons">
+          <button id="exploreBtn">Explorar categorias</button>
+          <button id="newsletterBtn" class="outline">Assine a newsletter</button>
         </div>
       </div>
-      <div class="intro-image"></div>
+      <div class="hero-image"></div>
     </section>
 
     <section class="categories">
       <h2>Categorias Populares</h2>
-      <div class="category-grid popular">
-        <div class="category-card">Work</div>
-        <div class="category-card">Books</div>
-        <div class="category-card">Techno</div>
+      <div class="category-grid">
+        <div class="card">Work</div>
+        <div class="card">Books</div>
+        <div class="card">Techno</div>
       </div>
     </section>
 
-    <section class="categories-all">
+    <section class="all-categories">
       <h2>Todas as Categorias</h2>
-      <div class="category-grid all">
-        <div class="category-card">Negócios</div>
-        <div class="category-card">Techno</div>
-        <div class="category-card">Produtividade</div>
-        <div class="category-card">Filmes</div>
-        <div class="category-card">Lifestyle</div>
-        <div class="category-card">Educação</div>
-        <div class="category-card">Mailing</div>
-        <div class="category-card">eCommerce</div>
-        <div class="category-card">Alimentação</div>
-        <div class="category-card">Social</div>
+      <div class="category-list">
+        <span>Negócios</span><span>Techno</span><span>Produtividade</span>
+        <span>Filmes</span><span>Lifestyle</span><span>Educação</span>
+        <span>Mailing</span><span>eCommerce</span><span>Alimentação</span><span>Social</span>
       </div>
     </section>
 
     <section class="posts">
-      <h2>Postagens em Destaque</h2>
-      <div class="posts-layout">
-        <div class="posts-list">
-          <article class="post-card">
-            <div class="thumb"></div>
-            <div class="post-content">
-              <p class="meta">31 Jul 2025 • Destaque</p>
-              <h3>Erros de Design que Todos Devem Evitar</h3>
-              <p class="reading-time">3 min de leitura</p>
-            </div>
-          </article>
-
-          <article class="post-card">
-            <div class="thumb"></div>
-            <div class="post-content">
-              <p class="meta">31 Jul 2025 • Destaque</p>
-              <h3>As Maiores Empresas por Receita</h3>
-              <p class="reading-time">3 min de leitura</p>
-            </div>
-          </article>
+      <div class="featured">
+        <h2>Postagens em Destaque</h2>
+        <div class="post-card">
+          <div class="thumbnail"></div>
+          <div class="post-info">
+            <small>31 Jul 2025 • Destaque</small>
+            <h3>Erros de Design que Todos Devem Evitar</h3>
+            <p>3 min de leitura</p>
+          </div>
         </div>
-
-        <aside class="editor-picks">
-          <h3>Escolhas do Editor</h3>
-          <ul>
-            <li>O uso negativo da internet</li>
-            <li>O segredo do brainstorm</li>
-            <li>Escalar para pequenos negócios</li>
-            <li>O futuro do trabalho remoto</li>
-          </ul>
-        </aside>
+        <div class="post-card">
+          <div class="thumbnail"></div>
+          <div class="post-info">
+            <small>31 Jul 2025 • Destaque</small>
+            <h3>As Maiores Empresas por Receita</h3>
+            <p>3 min de leitura</p>
+          </div>
+        </div>
       </div>
+
+      <aside class="editor-choice">
+        <h2>Escolhas do Editor</h2>
+        <ul>
+          <li>O uso negativo da internet</li>
+          <li>O segredo do brainstorm</li>
+          <li>Escalar para pequenos negócios</li>
+          <li>O futuro do trabalho remoto</li>
+        </ul>
+      </aside>
     </section>
+
+    <footer>
+      <div class="footer-tags">
+        <span>Instagram</span>
+        <span>Work</span>
+        <span>Bags</span>
+        <span>Lamp</span>
+        <span>Books</span>
+      </div>
+    </footer>
   </main>
 
-  <footer>
-    <ul class="footer-tags">
-      <li>Instagram</li>
-      <li>Work</li>
-      <li>Bags</li>
-      <li>Lamp</li>
-      <li>Books</li>
-    </ul>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
