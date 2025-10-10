@@ -1,4 +1,4 @@
-{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f9f9f9;
+  background: #faf9f9;
   color: #222;
 }
 
@@ -103,6 +103,7 @@ button.outline {
 
 .category-grid, .category-list, .footer-tags {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -126,7 +127,7 @@ button.outline {
   background: #fff;
   padding: 0.7rem 1rem;
   border-radius: 10px;
-  border: 1px dashed #ccc;
+  border: 1px solid #ccc;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -178,6 +179,67 @@ footer {
   text-align: center;
 }
 
+.TituloGrande{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+
+.category-page{
+  padding: 2rem;
+}
+
+.filtro{
+  list-style-type: none;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.button-filtro{
+  margin-top: 1rem;
+  background-color: #fff;
+  border: solid 1px #999999;
+  border-radius: 0.9rem;
+  color: #222;
+  font-size: smaller;
+  padding: 0.35rem 0.5rem;
+}
+
+.posts-grande{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.3rem;
+}
+
+.post-card-grande {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr;
+  gap: 1rem;
+  background: #fff;
+  border: 0.1rem solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: box-shadow 0.3s;
+  align-items: center;
+}
+
+.maior{
+  width:38rem;
+  height:20rem;
+}
+.carregar-mais{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.vermais{
+  font-size: large;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .hero {
@@ -194,3 +256,4 @@ footer {
     flex-direction: column;
   }
 }
+
