@@ -1,0 +1,97 @@
+DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HABIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 🔹 NAVBAR -->
+    <header class="navbar">
+        <div class="logo">HABIT</div>
+        <nav class="nav-links">
+            <a href="#">Início</a>
+            <a href="#">Páginas</a>
+            <a href="#">Destaques</a>
+            <a href="#">Assinar</a>
+            <a href="#">Admin</a>
+        </nav>
+        <div class="search-area">
+            <input type="text" placeholder="Buscar...">
+            <button class="btn-outline">Buscar</button>
+            <button class="btn-outline">Entrar</button>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Criar Post</a></li>
+                <li><a href="#">Escolhas do Editor</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="#">Fila de revisão</a></li>
+                <li><a href="#">Fila de comentários</a></li>
+            </ul>
+        </aside>
+
+        <!-- 🔹 ÁREA PRINCIPAL -->
+        <main class="content">
+
+            <!-- Cards de métricas -->
+            <div class="cards">
+                <div class="card">
+                    <p>Posts</p>
+                    <h2>128</h2>
+                </div>
+                <div class="card">
+                    <p>Visualizações</p>
+                    <h2>54k</h2>
+                </div>
+                <div class="card">
+                    <p>Inscritos</p>
+                    <h2>12k</h2>
+                </div>
+                <div class="card">
+                    <p>Pendências</p>
+                    <h2>7</h2>
+                </div>
+            </div>
+
+            <!-- Criar Post -->
+            <section class="create-post">
+                <h3>Criar Post</h3>
+                <input type="text" class="input-title" placeholder="Título">
+                <textarea placeholder="Escreva aqui... (Editor simulador)"></textarea>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Categorias e tags">
+                    <input type="file" placeholder="Upload da imagem de capa">
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-outline">Salvar rascunho</button>
+                    <button class="btn-outline">Enviar para revisão</button>
+                    <button class="btn-primary">Publicar (admin)</button>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer class="footer-tags">
+        <a href="#">Instagram</a>
+        <a href="#">Work</a>
+        <a href="#">Bags</a>
+        <a href="#">Lamp</a>
+        <a href="#">Books</a>
+    </footer>
+
+</body>
