@@ -51,6 +51,12 @@ footer {
   text-align: center;
 }
 
+/* -------------------- */
+
+
+
+/* CABEÇALHO PADRÃO PARA TODAS AS PÁGINAS */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,8 +64,8 @@ footer {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.2rem;
+font-weight: 700;
+font-size: 1.2rem;
 }
 
 .menu {
@@ -82,6 +88,26 @@ footer {
   display: flex;
   gap: 0.5rem;
 }
+
+/* -------------------------------------- */
+
+/* RODAPÉ PADRÃO PARA TODAS AS PÁGINAS */
+
+.category-list span, .footer-tags span {
+  background: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.category-list span:hover, .footer-tags span:hover {
+  background: #007a5c;
+  color: #fff;
+}
+
+/* ----------------------------------- */
 
 .hero {
   background: #fff;
@@ -129,20 +155,6 @@ footer {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.category-list span, .footer-tags span {
-  background: #fff;
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.category-list span:hover, .footer-tags span:hover {
-  background: #007a5c;
-  color: #fff;
 }
 
 .posts {
