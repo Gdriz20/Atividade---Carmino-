@@ -13,19 +13,25 @@ body {
 }
 
 header {
-  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;              
   padding: 1rem 2rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 input {
-  padding: 0.5rem 0.8rem;
+  padding: 0.7rem 1.2rem;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 8px;
   background-color: #007a5c;
@@ -57,21 +63,30 @@ footer {
 
 /* CABEÇALHO PADRÃO PARA TODAS AS PÁGINAS */
 
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 1000;
+  cursor: default;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-font-weight: 700;
-font-size: 1.2rem;
-}
-
 .menu {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: .7rem;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
 .menu a {
@@ -86,7 +101,7 @@ font-size: 1.2rem;
 
 .search-area {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 /* -------------------------------------- */

@@ -10,22 +10,31 @@ DOCTYPE html>
 <body>
 
     <!-- 🔹 NAVBAR -->
-    <header class="navbar">
-        <div class="logo">HABIT</div>
-        <nav class="nav-links">
-            <a href="#">Início</a>
-            <a href="#">Páginas</a>
-            <a href="#">Destaques</a>
-            <a href="#">Assinar</a>
-            <a href="#">Admin</a>
-        </nav>
-        <div class="search-area">
-            <input type="text" placeholder="Buscar...">
-            <button class="btn-outline">Buscar</button>
-            <button class="btn-outline">Entrar</button>
-        </div>
-    </header>
+    <header>
 
+        <section class="navLeft">
+
+            <h1>HABIT</h1>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Páginas</a></li>
+                    <li><a href="#">Destaques</a></li>
+                    <li><a href="#">Assinar</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="navRight">
+            <div class="search-area">
+                <input type="text" id="search" placeholder="Buscar...">
+                <button id="btnSearch">Buscar</button>
+                <button id="btnLogin" class="outline">Entrar</button>
+            </div>
+        </section>
+        
+    </header>
     <div class="container">
 
         <aside class="sidebar">
