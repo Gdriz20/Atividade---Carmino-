@@ -93,7 +93,48 @@ font-size: 1.2rem;
 
 /* RODAPÉ PADRÃO PARA TODAS AS PÁGINAS */
 
-.category-list span, .footer-tags span {
+footer p{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.footer-tags{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  
+}
+
+.footer-tags span {
+  /* disposição do texto */
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* estilização */
+  background: #fff;
+  height: 5rem;
+  padding: .5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 1000;
+  transition: background 0.3s;
+  font-size:x-large;
+}
+
+.footer-tags span:hover {
+  background: #007a5c;
+  color: #fff;
+}
+
+/* ----------------------------------- */
+
+.category-list span{
   background: #fff;
   padding: 0.7rem 1rem;
   border-radius: 10px;
@@ -102,12 +143,10 @@ font-size: 1.2rem;
   transition: background 0.3s;
 }
 
-.category-list span:hover, .footer-tags span:hover {
+.category-list span:hover{
   background: #007a5c;
   color: #fff;
 }
-
-/* ----------------------------------- */
 
 .hero {
   background: #fff;
@@ -135,7 +174,7 @@ font-size: 1.2rem;
   border-radius: 12px;
 }
 
-.category-grid, .category-list, .footer-tags {
+.category-grid, .category-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
