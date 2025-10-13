@@ -420,6 +420,64 @@ footer p{
 
 /* ------------------------------------------------------------------ */
 
+/* ------------------------- PÁGINA DE NEWSLETTER ------------------------- */
+
+.newsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#f8f9fa;
+  min-height: 70vh;
+  border: 1px solid #ddd;
+}
+
+.cardNewsletter{
+  background-color: #fff;
+  padding: 40px 20px;
+  border: #ddd solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 800px;
+  height: 300px;
+  max-width: 90%;
+}
+
+.cardNewsletter h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* Inputs */
+.formNewsletter input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.confirmarNewsletter{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.submitNewsletter {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.aceiteNewsletter{
+  width: 16px;
+  height: 16px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
 /* Responsividade */
 @media (max-width: 768px) {
   .hero {
