@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="main-nav">
+                <h1 class="logo">HABIT</h1>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Páginas</a></li>
+                    <li><a href="#">Destaques</a></li>
+                    <li><a href="#">Assinar</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu-admin">
+                <p>Menu</p>
+                <ul>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Criar Post</a></li>
+                    <li><a href="#">Escolhas do Editor</a></li>
+                    <li><a href="#" class="active">Usuários</a></li>
+                    <li><a href="#">Fila de revisão</a></li>
+                    <li><a href="#">Fila de comentários</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar">
+                    <button class="search-btn">Buscar</button>
+                    <button class="enter-btn">Entrar</button>
+                </div>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <span class="stat-label">Posts</span>
+                    <span class="stat-value">128</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Visualizações</span>
+                    <span class="stat-value">54K</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Inscritos</span>
+                    <span class="stat-value">12K</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Pendentes</span>
+                    <span class="stat-value">7</span>
+                </div>
+            </section>
+
+            <section class="users-section">
+                <div class="section-header">
+                    <h2>Usuários</h2>
+                    <input type="text" placeholder="Buscar" class="user-search">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>E-mail</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Usuário #1</td>
+                            <td>email@teste.com</td>
+                            <td><span class="status active">Ativo</span></td>
+                            <td><button class="action-btn block">Bloquear</button></td>
+                        </tr>
+                        <tr>
+                            <td>Usuário #2</td>
+                            <td>email@teste.com</td>
+                            <td><span class="status active">Ativo</span></td>
+                            <td><button class="action-btn block">Bloquear</button></td>
+                        </tr>
+                         <tr>
+                            <td>Usuário #3</td>
+                            <td>email@teste.com</td>
+                            <td><span class="status blocked">Bloqueado</span></td>
+                            <td><button class="action-btn unblock">Desbloquear</button></td>
+                        </tr>
+                        <tr>
+                            <td>Usuário #4</td>
+                            <td>email@teste.com</td>
+                            <td><span class="status active">Ativo</span></td>
+                            <td><button class="action-btn block">Bloquear</button></td>
+                        </tr>
+                        <tr>
+                            <td>Usuário #5</td>
+                            <td>email@teste.com</td>
+                            <td><span class="status active">Ativo</span></td>
+                            <td><button class="action-btn block">Bloquear</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <footer class="main-footer">
+                <a href="#">Instagram</a>
+                <a href="#">Work</a>
+                <a href="#">Bags</a>
+                <a href="#">Lamp</a>
+                <a href="#">Books</a>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

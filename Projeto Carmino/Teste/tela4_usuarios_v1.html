@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 4: Usuários v1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar"><nav class="main-nav"><h1 class="logo">HABIT</h1><ul><li><a href="#">Início</a></li><li><a href="#">Páginas</a></li><li><a href="#">Destaques</a></li><li><a href="#">Assinar</a></li><li><a href="#">Admin</a></li></ul></nav><nav class="menu-admin"><p>Menu</p><ul><li><a href="#">Categorias</a></li><li><a href="#">Criar Post</a></li><li><a href="#">Escolhas do Editor</a></li><li><a href="#" class="active">Usuários</a></li><li><a href="#">Fila de revisão</a></li><li><a href="#">Fila de comentários</a></li></ul></nav></aside>
+        <main class="main-content">
+            <header class="main-header"><div class="search-bar"><input type="text" placeholder="Pesquisar"><button class="search-btn">Buscar</button><button class="enter-btn">Entrar</button></div></header>
+
+            <section class="page-section">
+                <div class="section-header">
+                    <h2>Usuários</h2>
+                    <button id="add-user-btn" class="add-new-btn">+ Novo usuário</button>
+                </div>
+                <table id="users-table">
+                    <thead><tr><th>Nome</th><th>Email</th><th>Status</th><th>Ações</th></tr></thead>
+                    <tbody>
+                        <tr><td>Usuário #1</td><td>usuario1@email.com</td><td><span class="status active">Ativo</span></td><td><button class="action-btn edit">Editar</button><button class="action-btn delete">Excluir</button></td></tr>
+                        <tr><td>Usuário #2</td><td>usuario2@email.com</td><td><span class="status active">Ativo</span></td><td><button class="action-btn edit">Editar</button><button class="action-btn delete">Excluir</button></td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <footer class="main-footer"><a href="#">Instagram</a><a href="#">Work</a><a href="#">Bags</a><a href="#">Lamp</a><a href="#">Books</a></footer>
+        </main>
+    </div>
+    <div id="notification"></div>
+    <script>
+        document.getElementById('add-user-btn').addEventListener('click', () => {
+            alert('Funcionalidade "Novo Usuário": Aqui abriria um formulário para adicionar um novo usuário.');
+            showNotification('Pronto para adicionar um novo usuário.');
+        });
+        const tableBody = document.querySelector('#users-table tbody');
+        tableBody.addEventListener('click', function(event) {
+            const button = event.target;
+            const row = button.closest('tr');
+            if (!row) return;
+
+            if (button.classList.contains('edit')) {
+                const userName = row.cells[0].textContent;
+                alert(`Editando o usuário: ${userName}\n(Aqui abriria um modal ou formulário de edição).`);
+            }
+            if (button.classList.contains('delete')) {
+                if (confirm('Atenção: Esta ação é irreversível. Deseja excluir este usuário?')) {
+                    row.remove();
+                    showNotification('Usuário excluído com sucesso.');
+                }
+            }
+        });
+        function showNotification(message) { const notification = document.getElementById('notification'); notification.textContent = message; notification.classList.add('show'); setTimeout(() => { notification.classList.remove('show'); }, 3000); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 1: Fila de Comentários v1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="main-nav"><h1 class="logo">HABIT</h1><ul><li><a href="#">Início</a></li><li><a href="#">Páginas</a></li><li><a href="#">Destaques</a></li><li><a href="#">Assinar</a></li><li><a href="#">Admin</a></li></ul></nav>
+            <nav class="menu-admin">
+                <p>Menu</p>
+                <ul>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Criar Post</a></li>
+                    <li><a href="#">Escolhas do Editor</a></li>
+                    <li><a href="#">Usuários</a></li>
+                    <li><a href="#">Fila de revisão</a></li>
+                    <li><a href="#" class="active">Fila de comentários</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="main-header"><div class="search-bar"><input type="text" placeholder="Pesquisar"><button class="search-btn">Buscar</button><button class="enter-btn">Entrar</button></div></header>
+            <section class="stats"><div class="stat-card"><span class="stat-label">Posts</span><span class="stat-value">128</span></div><div class="stat-card"><span class="stat-label">Visualizações</span><span class="stat-value">54K</span></div><div class="stat-card"><span class="stat-label">Inscritos</span><span class="stat-value">12K</span></div><div class="stat-card"><span class="stat-label">Pendentes</span><span class="stat-value">7</span></div></section>
+            
+            <section class="page-section">
+                <div class="section-header"><h2>Fila de comentários</h2></div>
+                <table id="comments-table">
+                    <thead><tr><th>Título</th><th>Autor</th><th>Status</th><th>Ações</th></tr></thead>
+                    <tbody>
+                        <tr><td>Comentário #1</td><td>Usuário 1</td><td><span class="status pending">Em revisão</span></td><td><button class="action-btn view">Visualizar</button><button class="action-btn approve">Aprovar</button><button class="action-btn reject">Rejeitar</button></td></tr>
+                        <tr><td>Comentário #2</td><td>Usuário 2</td><td><span class="status pending">Em revisão</span></td><td><button class="action-btn view">Visualizar</button><button class="action-btn approve">Aprovar</button><button class="action-btn reject">Rejeitar</button></td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <footer class="main-footer"><a href="#">Instagram</a><a href="#">Work</a><a href="#">Bags</a><a href="#">Lamp</a><a href="#">Books</a></footer>
+        </main>
+    </div>
+
+    <div id="notification"></div>
+
+    <script>
+        const tableBody = document.querySelector('#comments-table tbody');
+
+        tableBody.addEventListener('click', function(event) {
+            const button = event.target;
+            const row = button.closest('tr');
+            if (!row) return;
+
+            if (button.classList.contains('approve')) {
+                row.remove();
+                showNotification('Comentário aprovado e removido da fila.');
+            }
+            if (button.classList.contains('reject')) {
+                if (confirm('Tem certeza que deseja rejeitar este comentário?')) {
+                    row.remove();
+                    showNotification('Comentário rejeitado.');
+                }
+            }
+            if (button.classList.contains('view')) {
+                const commentTitle = row.cells[0].textContent;
+                alert(`Visualizando o ${commentTitle}:\n\n"Este é um texto de exemplo do comentário."`);
+            }
+        });
+
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
