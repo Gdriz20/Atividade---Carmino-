@@ -1,4 +1,4 @@
-Atividade Recriar Telas em HTML e CSS
+<h1>Atividade Recriar Telas em HTML e CSS</h1>
 <h3>Grupo:</h3>
 <ul>
   <li>Leonardo do Amaral Quinquio</li>
