@@ -294,9 +294,10 @@ footer p{
   align-items: center;
 }
 
-.maior{
-  width:38rem;
-  height:20rem;
+.maior {
+  width: 100%;
+  max-width: 38rem;
+  height: 20rem;
 }
 .carregar-mais{
   display:flex;
@@ -479,6 +480,19 @@ footer p{
 /* ------------------------------------------------------------------------ */
 
 /* Responsividade */
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .posts-grande{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+  }
+  
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -492,6 +506,36 @@ footer p{
 
   .posts {
     flex-direction: column;
+  }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .search-area {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+  .posts-grande{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+  .maior {
+    width: 100%;
+    max-width: 42rem;
+    height: 20rem;
   }
 }
 
