@@ -476,8 +476,69 @@ footer p{
   height: 16px;
 }
 
-
 /* ------------------------------------------------------------------------ */
+
+/* ----------------------- TELA DE PESQUISA -----------------------  */
+
+.resultados {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.resultados h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.containerResults {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardResults {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardResults:hover {
+  transform: scale(1.01);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tituloCardResults{
+  width: 100%;
+}
+
+.areaImagemResults {
+  width: 70px;
+  height: 50px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.conteudoResults h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+}
+
+.specsResults {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+
 
 /* Responsividade */
 @media (max-width: 992px) {
