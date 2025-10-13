@@ -308,8 +308,8 @@ footer p{
   font-size: large;
 }
 
-/* PÁGINA DE LOGIN */
 
+/* ----------------------- PÁGINA DE LOGIN ----------------------- */
 .loginContainer{
   display: flex;
   justify-content: center;
@@ -361,8 +361,66 @@ footer p{
 .ajudaLogin a:hover {
   text-decoration: underline;
 }
+/* --------------------------------------------------------------- */
 
-/* --------------- */
+/* ----------------------- PÁGINA DE CADASTRO ----------------------- */
+
+.cadastroContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#f8f9fa;
+  min-height: 70vh;
+  border: 1px solid #ddd;
+}
+
+.cardCadastro{
+  background-color: #fff;
+  padding: 40px 20px;
+  border: #ddd solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 800px;
+  height: 500px;
+  max-width: 90%;
+}
+
+.cardCadastro h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* Inputs */
+.formCadastro input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.confirmarCadastro{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.submitCadastro {
+  width: 100%; /* força o botão a ocupar nova linha */
+  margin-top: 10px;
+}
+
+
+
+.aceiteTermos{
+  width: 16px;
+  height: 16px;
+}
+
+/* ------------------------------------------------------------------ */
 
 /* Responsividade */
 @media (max-width: 768px) {

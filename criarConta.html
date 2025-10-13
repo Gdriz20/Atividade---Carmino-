@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <title>Entre na sua conta</title>
+    <title>Crie a sua conta</title>
 </head>
 
 <body>
@@ -34,25 +34,33 @@
                 <button id="btnLogin" class="outline">Entrar</button>
             </div>
         </section>
-        
+
     </header>
 
     <!-- container para criar conta -->
     <main class="cadastroContainer">
 
         <section class="cardCadastro">
-            <h2>Entrar</h2>
+            <h2>Criar Conta</h2>
 
             <form class="formCadastro">
                 <div class="inputLogin">
+                    <input type="text" required placeholder="Nome Completo">
                     <input type="email" required placeholder="E-mail">
                     <input type="password" required placeholder="Senha">
+                    <input type="password" required placeholder="Confirmar senha">
                 </div>
 
-                <div class="submitCadastro">
-                    <button type="submit" class="btnEntrar">Entrar</button>
-                    <button type="button" class="outline">Entrar com Google</button>
-                </div>
+                <span class="confirmarCadastro">
+                    <div class="aceiteTermos">
+                        <input type="checkbox" id="aceite" name="termos" value="aceito" required> 
+                    </div>
+                        <label id="labelAceite" for="aceite">Concordo com os termos e a política de privacidade</label>
+                    
+                    <div class="submitCadastro">
+                        <button type="submit" class="btnEntrar">Cadastrar</button>
+                    </div>
+                </span>
 
             </form>
         </section>
